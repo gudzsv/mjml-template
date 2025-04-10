@@ -6,26 +6,27 @@
 			name="Inter"
 			href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
 		/>
+		<mj-attributes>
+			<mj-all font-family="Inter, Arial, 'Times New Roman', sans-serif" />
+		</mj-attributes>
 		<mj-style>
-			.nav { width: 268px !important; } .nav-link { padding: 10px 30px
-			!important;} .nav-link:last-child { padding-right: 0 !important; }
-			.image-fallback { display: block; min-height: 152px; max-height:310px;
-			background-color: #6e7c9a; } @media only screen and (max-width:480px) {
-			.nav-link { padding: 10px 10px !important;} .logo { width: 82px
-			!important; } .nav { width: 118px !important; } }
+			.no-download { pointer-events: none; } .nav-link { padding: 5px 30px
+			!important; } .nav-link:last-child { padding-right: 0 !important; }
+			.image-fallback { min-height: 152px; max-height: 310px; background-color:
+			#6e7c9a; pointer-events: none; } @media only screen and (max-width: 480px)
+			{ .nav-link { padding: 5px 10px !important; } }
 		</mj-style>
 	</mj-head>
 
 	<mj-body width="600px" background-color="#F1F3F3">
-		<!-- <mj-include path="./partials/header.mjml" /> -->
 		<mj-raw><!-- Header --></mj-raw>
 		<mj-wrapper padding="16px 24px">
 			<mj-section background-color="#F1F3F3" padding="0">
 				<mj-group width="100%">
 					<mj-column vertical-align="middle" width="25%">
 						<mj-image
-							css-class="logo"
-							src="/img/logo.png"
+							css-class="no-download"
+							src="/img/logo_.png"
 							href="/"
 							target="_self"
 							padding="0"
@@ -91,7 +92,7 @@
 			height="200px"
 			background-width="600px"
 			background-height="200px"
-			background-url="./img/hero.png"
+			background-url="./img/hero.jpg"
 			background-color="#6e7c9a"
 		>
 		</mj-hero>
@@ -167,7 +168,7 @@
 					</mj-text>
 					<mj-spacer height="32px"></mj-spacer>
 					<mj-image
-						src="/img/map.png"
+						src="/img/map.jpg"
 						alt="Ethereal Gardens, location on the map"
 						padding="0"
 						align="center"
@@ -201,7 +202,7 @@
 			<mj-section padding="0">
 				<mj-column width="268px">
 					<mj-image
-						src="/img/congrat.png"
+						src="/img/congrat.jpg"
 						alt="Wedding bouquet on the table"
 						padding="0"
 						align="center"
@@ -327,6 +328,9 @@
 						width="100%"
 						height="49px"
 						border-radius="0"
+						rel="noopener noreferrer"
+						target="_blank"
+						href="/menu"
 					>
 						View the Menu
 					</mj-button>
@@ -437,7 +441,7 @@
 					</mj-table>
 					<mj-spacer height="32px"></mj-spacer>
 					<mj-image
-						src="/img/rings.png"
+						src="/img/rings.jpg"
 						alt="Wedding rings"
 						padding="0"
 						align="center"
@@ -473,8 +477,11 @@
 						width="268px"
 						height="49px"
 						border-radius="0"
+						rel="noopener noreferrer"
+						target="_blank"
+						href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJf9NtfhOJ24AReTpPyfl3rlU"
 					>
-						View the Menu
+						View the Map
 					</mj-button>
 					<mj-spacer height="24px"></mj-spacer>
 					<mj-text
@@ -509,7 +516,8 @@
 			<mj-column>
 				<mj-spacer height="24px"></mj-spacer>
 				<mj-image
-					src="/img/logo_white.png"
+					css-class="no-download"
+					src="/img/logo_white_.png"
 					alt="Site logo"
 					padding="0"
 					align="center"
@@ -529,47 +537,53 @@
 					>Follow us on Social Media
 				</mj-text>
 				<mj-spacer height="16px"></mj-spacer>
-				<mj-social font-size="15px" icon-size="30px" mode="horizontal">
+				<mj-social
+					icon-size="24px"
+					inner-padding="0 8px"
+					line-height="16px"
+					mode="horizontal"
+					padding="0"
+				>
 					<mj-social-element
-						padding="0 8px"
+						css-class="no-download"
 						icon-size="24px"
-						src="/img/youtube.png"
+						src="/img/youtube_.png"
 						href="https://www.youtube.com/"
 						alt="youtube icon"
 						target="_blank"
 					>
 					</mj-social-element>
 					<mj-social-element
-						padding="0 8px"
+						css-class="no-download"
 						icon-size="24px"
-						src="/img/instagram-fill.png"
+						src="/img/instagram-fill_.png"
 						href="https://www.instagram.com/"
 						alt="instagram icon"
 						target="_blank"
 					>
 					</mj-social-element>
 					<mj-social-element
-						padding="0 8px"
+						css-class="no-download"
 						icon-size="24px"
-						src="/img/facebook.png"
+						src="/img/facebook_.png"
 						href="https://www.facebook.com/"
 						alt="facebook icon"
 						target="_blank"
 					>
 					</mj-social-element>
 					<mj-social-element
-						padding="0 8px"
+						css-class="no-download"
 						icon-size="24px"
-						src="/img/linkedin.png"
+						src="/img/linkedin_.png"
 						href="https://linkedin.com/"
 						alt="linkedin icon"
 						target="_blank"
 					>
 					</mj-social-element>
 					<mj-social-element
-						padding="0 8px"
+						css-class="no-download"
 						icon-size="24px"
-						src="/img/pinterest.png"
+						src="/img/pinterest_.png"
 						href="https://www.pinterest.com/ideas/"
 						alt="pinterest icon"
 						target="_blank"

@@ -1,0 +1,17 @@
+{
+	"name": "mjml-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile": "mjml index.mjml -o index.html",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Serhii Hudzenko <gudzsvmail@gmail.com>",
+	"license": "MIT",
+	"type": "commonjs",
+	"dependencies": {
+		"mjml": "^4.15.3"
+	}
+}

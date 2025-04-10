@@ -1,0 +1,223 @@
+<mjml>
+	<mj-head>
+		<mj-title>Nexa events</mj-title>
+		<mj-preview>Nexa events</mj-preview>
+		<mj-style> </mj-style>
+	</mj-head>
+
+	<mj-body width="600px" background-color="#F1F3F3">
+		<!-- <mj-include path="./partials/header.mjml" /> -->
+		<mj-raw><!-- Header --></mj-raw>
+		<mj-wrapper padding="16px 24px">
+			<mj-section background-color="#F1F3F3" padding="0">
+				<mj-column vertical-align="middle" width="25%">
+					<mj-image
+						src="/img/logo.png"
+						href="/"
+						target="_self"
+						padding="0"
+						width="126px"
+						align="left"
+						alt="Site Logo"
+						title="Site Logo"
+						name="Go to homepage"
+						rel="noopener noreferrer"
+					/>
+				</mj-column>
+				<mj-column vertical-align="middle" width="75%">
+					<mj-navbar base-url="/" align="right">
+						<mj-navbar-link
+							padding="0 30px 0 0"
+							href="/about"
+							target="_blank"
+							rel="noopener noreferrer"
+							color="#0F1123"
+							font-family="Arial, sans-serif"
+							font-size="16px"
+							font-weight="400"
+							line-height="20.244px"
+							text-transform="none"
+							>About Us</mj-navbar-link
+						>
+						<mj-navbar-link
+							padding="0 30px"
+							href="/pricing"
+							target="_blank"
+							rel="noopener noreferrer"
+							color="#0F1123"
+							font-family="Arial, sans-serif"
+							font-size="16px"
+							font-weight="400"
+							line-height="20.244px"
+							text-transform="none"
+							>Pricing</mj-navbar-link
+						>
+						<mj-navbar-link
+							padding="0 0 0 30px"
+							href="/blog"
+							target="_blank"
+							rel="noopener noreferrer"
+							color="#0F1123"
+							font-family="Arial, sans-serif"
+							font-size="16px"
+							font-weight="400"
+							line-height="20.244px"
+							text-transform="none"
+							>Blog</mj-navbar-link
+						>
+					</mj-navbar>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+
+		<mj-raw><!-- Hero Section --></mj-raw>
+		<mj-raw><!-- Hero Image --></mj-raw>
+		<mj-hero
+			mode="fixed-height"
+			height="200px"
+			background-width="600px"
+			background-height="200px"
+			background-url="./img/hero.png"
+			background-color="#2a3448"
+		>
+		</mj-hero>
+
+		<mj-raw><!-- Hero Text Content --></mj-raw>
+		<mj-wrapper padding="0 24px">
+			<mj-section padding="0">
+				<mj-column>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						padding-bottom="24px"
+						color="#0F1123"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="700"
+						line-height="22.2px"
+						font-style="normal"
+						>Dear [Recipient.FirstName],</mj-text
+					>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="19.2px"
+						font-style="normal"
+						>On behalf of Groom and Bride, I’m excited to share the final
+						details for their upcoming wedding! Below are the important updates
+						to help ensure the day goes smoothly:
+					</mj-text>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+
+		<mj-raw><!-- Event Details --></mj-raw>
+		<mj-wrapper padding="0 24px">
+			<mj-section padding="0">
+				<mj-column>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						padding-bottom="24px"
+						color="#0F1123"
+						font-family="Times New Roman"
+						font-size="24px"
+						font-weight="400"
+						line-height="28.8px"
+						font-style="normal"
+						text-transform="uppercase"
+						align="center"
+						>Event Details</mj-text
+					>
+					<mj-text
+						padding="0"
+						color="#21272A"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="22.4px"
+						font-style="normal"
+						><strong>Date:</strong> August 6, 2025<br />
+						<strong>Venue:</strong> Ethereal Gardens<br />
+						<strong>Address:</strong> 8561 W Lilac Rd Escondido, CA 92026<br />
+						<a
+							href="https://www.google.com/maps/place/Ethereal+Gardens/@33.2984743,-117.1460837,17z/data=!3m1!4b1!4m6!3m5!1s0x80db89137e6dd37f:0x55ae77f9c94f3a79!8m2!3d33.2984743!4d-117.1460837!16s%2Fg%2F11fk4m93_3?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+							target="_blank"
+							rel="noopener noreferrer"
+							style="color: #1967d2"
+							>View Google Maps</a
+						>
+					</mj-text>
+					<mj-spacer height="32px"></mj-spacer>
+					<mj-image
+						src="/img/map.png"
+						alt="Ethereal Gardens, location on the map"
+						padding="0"
+						align="center"
+						container-background-color="#2a3448"
+					/>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+		<mj-raw><!-- Wedding day timeline --></mj-raw>
+		<mj-wrapper padding="0 24px">
+			<mj-section padding="0">
+				<mj-column>
+					<mj-spacer height="32px"></mj-spacer>
+					<mj-text
+						padding="0"
+						padding-bottom="24px"
+						color="#0F1123"
+						font-family="Times New Roman"
+						font-size="24px"
+						font-weight="400"
+						line-height="28.8px"
+						font-style="normal"
+						text-transform="uppercase"
+						align="center"
+						>Wedding day timeline:
+					</mj-text>
+					<mj-spacer height="32px"></mj-spacer>
+				</mj-column>
+			</mj-section>
+			<mj-section padding="0">
+				<mj-column width="50%">
+					<mj-image
+						src="/img/congrat.png"
+						alt="Ethereal Gardens, location on the map"
+						padding="0"
+						align="center"
+						container-background-color="#2a3448"
+					/>
+				</mj-column>
+				<mj-column width="50%">
+					<mj-text
+						padding="0"
+						color="#21272A"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="22.4px"
+						font-style="normal"
+						><strong>Date:</strong> August 6, 2025<br />
+						<strong>Venue:</strong> Ethereal Gardens<br />
+						<strong>Address:</strong> 8561 W Lilac Rd Escondido, CA 92026<br />
+						<a
+							href="https://www.google.com/maps/place/Ethereal+Gardens/@33.2984743,-117.1460837,17z/data=!3m1!4b1!4m6!3m5!1s0x80db89137e6dd37f:0x55ae77f9c94f3a79!8m2!3d33.2984743!4d-117.1460837!16s%2Fg%2F11fk4m93_3?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+							target="_blank"
+							rel="noopener noreferrer"
+							style="color: #1967d2"
+							>View Google Maps</a
+						>
+					</mj-text>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
+		<mj-raw><!-- Important Reminders --> </mj-raw>
+
+		<mj-raw><!-- Footer --> </mj-raw>
+	</mj-body>
+</mjml>

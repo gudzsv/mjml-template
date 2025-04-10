@@ -2,7 +2,18 @@
 	<mj-head>
 		<mj-title>Nexa events</mj-title>
 		<mj-preview>Nexa events</mj-preview>
-		<mj-style> </mj-style>
+		<mj-font
+			name="Inter"
+			href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+		/>
+		<mj-style>
+			.nav { width: 268px !important; } .nav-link { padding: 10px 30px
+			!important;} .nav-link:last-child { padding-right: 0 !important; }
+			.image-fallback { display: block; min-height: 152px; max-height:310px;
+			background-color: #6e7c9a; } @media only screen and (max-width:480px) {
+			.nav-link { padding: 10px 10px !important;} .logo { width: 82px
+			!important; } .nav { width: 118px !important; } }
+		</mj-style>
 	</mj-head>
 
 	<mj-body width="600px" background-color="#F1F3F3">
@@ -10,63 +21,66 @@
 		<mj-raw><!-- Header --></mj-raw>
 		<mj-wrapper padding="16px 24px">
 			<mj-section background-color="#F1F3F3" padding="0">
-				<mj-column vertical-align="middle" width="25%">
-					<mj-image
-						src="/img/logo.png"
-						href="/"
-						target="_self"
-						padding="0"
-						width="126px"
-						align="left"
-						alt="Site Logo"
-						title="Site Logo"
-						name="Go to homepage"
-						rel="noopener noreferrer"
-					/>
-				</mj-column>
-				<mj-column vertical-align="middle" width="75%">
-					<mj-navbar base-url="/" align="right">
-						<mj-navbar-link
-							padding="0 30px 0 0"
-							href="/about"
-							target="_blank"
+				<mj-group width="100%">
+					<mj-column vertical-align="middle" width="25%">
+						<mj-image
+							css-class="logo"
+							src="/img/logo.png"
+							href="/"
+							target="_self"
+							padding="0"
+							align="left"
+							alt="Site Logo"
+							title="Site Logo"
+							name="Go to homepage"
 							rel="noopener noreferrer"
-							color="#0F1123"
-							font-family="Arial, sans-serif"
-							font-size="16px"
-							font-weight="400"
-							line-height="20.244px"
-							text-transform="none"
-							>About Us</mj-navbar-link
-						>
-						<mj-navbar-link
-							padding="0 30px"
-							href="/pricing"
-							target="_blank"
-							rel="noopener noreferrer"
-							color="#0F1123"
-							font-family="Arial, sans-serif"
-							font-size="16px"
-							font-weight="400"
-							line-height="20.244px"
-							text-transform="none"
-							>Pricing</mj-navbar-link
-						>
-						<mj-navbar-link
-							padding="0 0 0 30px"
-							href="/blog"
-							target="_blank"
-							rel="noopener noreferrer"
-							color="#0F1123"
-							font-family="Arial, sans-serif"
-							font-size="16px"
-							font-weight="400"
-							line-height="20.244px"
-							text-transform="none"
-							>Blog</mj-navbar-link
-						>
-					</mj-navbar>
-				</mj-column>
+						/>
+					</mj-column>
+
+					<mj-column vertical-align="middle" width="75%">
+						<mj-navbar base-url="/" align="right" css-class="nav">
+							<mj-navbar-link
+								css-class="nav-link"
+								href="/about"
+								target="_blank"
+								rel="noopener noreferrer"
+								color="#0F1123"
+								font-family="Arial"
+								font-size="16px"
+								font-weight="400"
+								line-height="20.244px"
+								text-transform="none"
+								>About Us</mj-navbar-link
+							>
+							<mj-navbar-link
+								css-class="nav-link"
+								href="/pricing"
+								target="_blank"
+								rel="noopener noreferrer"
+								color="#0F1123"
+								font-family="Arial"
+								font-size="16px"
+								font-weight="400"
+								line-height="20.244px"
+								text-transform="none"
+								>Pricing</mj-navbar-link
+							>
+							<mj-navbar-link
+								css-class="nav-link"
+								href="/blog"
+								target="_blank"
+								rel="noopener noreferrer"
+								color="#0F1123"
+								font-family="Arial"
+								font-size="16px"
+								font-weight="400"
+								line-height="20.244px"
+								text-transform="none"
+								>Blog</mj-navbar-link
+							>
+						</mj-navbar>
+					</mj-column>
+				</mj-group>
 			</mj-section>
 		</mj-wrapper>
 
@@ -78,7 +92,7 @@
 			background-width="600px"
 			background-height="200px"
 			background-url="./img/hero.png"
-			background-color="#2a3448"
+			background-color="#6e7c9a"
 		>
 		</mj-hero>
 
@@ -157,11 +171,13 @@
 						alt="Ethereal Gardens, location on the map"
 						padding="0"
 						align="center"
-						container-background-color="#2a3448"
+						container-background-color="#6e7c9a"
+						css-class="image-fallback"
 					/>
 				</mj-column>
 			</mj-section>
 		</mj-wrapper>
+
 		<mj-raw><!-- Wedding day timeline --></mj-raw>
 		<mj-wrapper padding="0 24px">
 			<mj-section padding="0">
@@ -169,7 +185,6 @@
 					<mj-spacer height="32px"></mj-spacer>
 					<mj-text
 						padding="0"
-						padding-bottom="24px"
 						color="#0F1123"
 						font-family="Times New Roman"
 						font-size="24px"
@@ -180,44 +195,389 @@
 						align="center"
 						>Wedding day timeline:
 					</mj-text>
-					<mj-spacer height="32px"></mj-spacer>
+					<mj-spacer height="24px"></mj-spacer>
 				</mj-column>
 			</mj-section>
 			<mj-section padding="0">
-				<mj-column width="50%">
+				<mj-column width="268px">
 					<mj-image
 						src="/img/congrat.png"
-						alt="Ethereal Gardens, location on the map"
+						alt="Wedding bouquet on the table"
 						padding="0"
 						align="center"
-						container-background-color="#2a3448"
+						container-background-color="#6e7c9a"
+						width="268px"
+						fluid-on-mobile="true"
+						css-class="image-fallback"
 					/>
 				</mj-column>
-				<mj-column width="50%">
+				<mj-column width="16px">
+					<mj-spacer height="16px"></mj-spacer
+				></mj-column>
+				<mj-column width="268px">
 					<mj-text
 						padding="0"
-						color="#21272A"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">4:00 PM</strong> GUEST ARRIVAL
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">4:45 PM</strong> CEREMONY BEGINS
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">5:15 PM</strong> COCKTAIL HOUR
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">6:30 PM</strong> GRAND ENTRANCE
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">6:45 PM</strong> DINNER RECEPTION
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">8:15 PM</strong> CAKE CUTTING
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">9:30 PM</strong> BAR LAST CALL
+					</mj-text>
+					<mj-spacer height="18px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Inter"
+						font-size="16px"
+						font-weight="400"
+						line-height="17px"
+						font-style="normal"
+						><strong style="font-weight: 600">10:00 PM</strong> GRAND EXIT
+					</mj-text>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
 						font-family="Arial"
 						font-size="16px"
 						font-weight="400"
-						line-height="22.4px"
+						line-height="19.2px"
+						height="38px"
 						font-style="normal"
-						><strong>Date:</strong> August 6, 2025<br />
-						<strong>Venue:</strong> Ethereal Gardens<br />
-						<strong>Address:</strong> 8561 W Lilac Rd Escondido, CA 92026<br />
-						<a
-							href="https://www.google.com/maps/place/Ethereal+Gardens/@33.2984743,-117.1460837,17z/data=!3m1!4b1!4m6!3m5!1s0x80db89137e6dd37f:0x55ae77f9c94f3a79!8m2!3d33.2984743!4d-117.1460837!16s%2Fg%2F11fk4m93_3?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D"
-							target="_blank"
-							rel="noopener noreferrer"
-							style="color: #1967d2"
-							>View Google Maps</a
-						>
+						>Dinner will feature a family-style buffet menu.
 					</mj-text>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-button
+						padding="0"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="19.2px"
+						text-transform="uppercase"
+						background-color="#0F1123"
+						color="#FFFFFF"
+						width="100%"
+						height="49px"
+						border-radius="0"
+					>
+						View the Menu
+					</mj-button>
 				</mj-column>
 			</mj-section>
 		</mj-wrapper>
 		<mj-raw><!-- Important Reminders --> </mj-raw>
-
+		<mj-wrapper padding="0 24px">
+			<mj-section padding="0">
+				<mj-column>
+					<mj-spacer height="32px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#0F1123"
+						font-family="Times New Roman"
+						font-size="24px"
+						font-weight="400"
+						line-height="28.8px"
+						font-style="normal"
+						text-transform="uppercase"
+						align="center"
+						>Important Reminders:
+					</mj-text>
+					<mj-spacer height="24px"></mj-spacer>
+				</mj-column>
+			</mj-section>
+			<mj-section padding="0">
+				<mj-column>
+					<mj-table padding="0">
+						<tr style="padding: 0">
+							<td
+								style="
+									padding: 0 10px;
+									width: 5px;
+									font-size: 16px;
+									align-content: start;
+								"
+							>
+								•
+							</td>
+							<td
+								style="
+									padding: 0;
+									color: #010101;
+									font-family: Arial;
+									font-size: 16px;
+									line-height: 19.2px;
+									font-weight: 400;
+								"
+							>
+								<strong>Bartenders will be checking IDs</strong>, so don’t
+								forget to bring yours to enjoy the bar service.
+							</td>
+						</tr>
+						<tr style="padding: 0">
+							<td
+								style="
+									padding: 0 10px;
+									width: 5px;
+									font-size: 16px;
+									align-content: start;
+								"
+							>
+								•
+							</td>
+							<td
+								style="
+									padding: 0;
+									color: #010101;
+									font-family: Arial;
+									font-size: 16px;
+									line-height: 19.2px;
+									font-weight: 400;
+								"
+							>
+								<strong>Valet Service:</strong> Upon your arrival, simply pull
+								up to the entrance where a valet attendant will assist with
+								parking.
+							</td>
+						</tr>
+						<tr style="padding: 0">
+							<td
+								style="
+									padding: 0 10px;
+									width: 5px;
+									font-size: 16px;
+									align-content: start;
+								"
+							>
+								•
+							</td>
+							<td
+								style="
+									padding: 0;
+									color: #010101;
+									font-family: Arial;
+									font-size: 16px;
+									line-height: 19.2px;
+									font-weight: 400;
+								"
+							>
+								<strong>Security & Guidance:</strong> After handing over your
+								vehicle, security personnel will be available to guide you to
+								the ceremony location. Please follow their instructions to
+								ensure a seamless experience.
+							</td>
+						</tr>
+					</mj-table>
+					<mj-spacer height="32px"></mj-spacer>
+					<mj-image
+						src="/img/rings.png"
+						alt="Wedding rings"
+						padding="0"
+						align="center"
+						container-background-color="#6e7c9a"
+						width="552px"
+						fluid-on-mobile="true"
+						css-class="image-fallback"
+					/>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#010101"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="19.2px"
+						font-style="normal"
+						>We are delighted to provide you with the wedding event map for
+						Groom & Bride's special day! The map outlines all the key locations,
+						including the ceremony, reception, and other important details to
+						ensure a smooth and enjoyable experience.
+					</mj-text>
+					<mj-spacer height="32px"></mj-spacer>
+					<mj-button
+						padding="0"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="19.2px"
+						text-transform="uppercase"
+						background-color="#0F1123"
+						color="#FFFFFF"
+						width="268px"
+						height="49px"
+						border-radius="0"
+					>
+						View the Menu
+					</mj-button>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#000"
+						font-family="Arial"
+						font-size="16px"
+						font-weight="400"
+						line-height="19.2px"
+						font-style="normal"
+						>We look forward to celebrating together! If you have any questions,
+						please don’t hesitate to reach out.
+					</mj-text>
+					<mj-spacer height="24px"></mj-spacer>
+					<mj-text
+						padding="0"
+						color="#363636"
+						font-family="Arial"
+						font-size="11.953px"
+						font-weight="700"
+						line-height="14.344px"
+						font-style="italic"
+						>Kind Regards,<br />Wedding Planner<br />
+						On behalf of Groom & Bride<br />Nexa Events
+					</mj-text>
+					<mj-spacer height="48px"></mj-spacer>
+				</mj-column>
+			</mj-section>
+		</mj-wrapper>
 		<mj-raw><!-- Footer --> </mj-raw>
+		<mj-section padding="0" background-color="#0F1123">
+			<mj-column>
+				<mj-spacer height="24px"></mj-spacer>
+				<mj-image
+					src="/img/logo_white.png"
+					alt="Site logo"
+					padding="0"
+					align="center"
+					width="126px"
+				/>
+				<mj-spacer height="36px"></mj-spacer>
+				<mj-text
+					padding="0"
+					align="center"
+					color="#FFF"
+					font-family="Times New Roman"
+					font-size="24px"
+					font-weight="400"
+					line-height="28.8px"
+					font-style="normal"
+					text-transform="uppercase"
+					>Follow us on Social Media
+				</mj-text>
+				<mj-spacer height="16px"></mj-spacer>
+				<mj-social font-size="15px" icon-size="30px" mode="horizontal">
+					<mj-social-element
+						padding="0 8px"
+						icon-size="24px"
+						src="/img/youtube.png"
+						href="https://www.youtube.com/"
+						alt="youtube icon"
+						target="_blank"
+					>
+					</mj-social-element>
+					<mj-social-element
+						padding="0 8px"
+						icon-size="24px"
+						src="/img/instagram-fill.png"
+						href="https://www.instagram.com/"
+						alt="instagram icon"
+						target="_blank"
+					>
+					</mj-social-element>
+					<mj-social-element
+						padding="0 8px"
+						icon-size="24px"
+						src="/img/facebook.png"
+						href="https://www.facebook.com/"
+						alt="facebook icon"
+						target="_blank"
+					>
+					</mj-social-element>
+					<mj-social-element
+						padding="0 8px"
+						icon-size="24px"
+						src="/img/linkedin.png"
+						href="https://linkedin.com/"
+						alt="linkedin icon"
+						target="_blank"
+					>
+					</mj-social-element>
+					<mj-social-element
+						padding="0 8px"
+						icon-size="24px"
+						src="/img/pinterest.png"
+						href="https://www.pinterest.com/ideas/"
+						alt="pinterest icon"
+						target="_blank"
+					>
+					</mj-social-element>
+				</mj-social>
+				<mj-spacer height="24px"></mj-spacer>
+			</mj-column>
+		</mj-section>
 	</mj-body>
 </mjml>

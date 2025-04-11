@@ -12,9 +12,9 @@
 		<mj-style>
 			.no-download { pointer-events: none; } .nav-link { padding: 5px 30px
 			!important; } .nav-link:last-child { padding-right: 0 !important; }
-			.image-fallback { min-height: 152px; max-height: 310px; background-color:
-			#6e7c9a; pointer-events: none; } @media only screen and (max-width: 480px)
-			{ .nav-link { padding: 5px 10px !important; } }
+			.image-fallback {height: 100px; background-color:#6e7c9a; pointer-events:
+			none;} @media only screen and (max-width: 480px) { .nav-link { padding:
+			5px 10px !important; } }
 		</mj-style>
 	</mj-head>
 
@@ -86,7 +86,6 @@
 		</mj-wrapper>
 
 		<mj-raw><!-- Hero Section --></mj-raw>
-		<mj-raw><!-- Hero Image --></mj-raw>
 		<mj-hero
 			mode="fixed-height"
 			height="200px"
@@ -96,8 +95,6 @@
 			background-color="#6e7c9a"
 		>
 		</mj-hero>
-
-		<mj-raw><!-- Hero Text Content --></mj-raw>
 		<mj-wrapper padding="0 24px">
 			<mj-section padding="0">
 				<mj-column>
@@ -325,7 +322,7 @@
 						text-transform="uppercase"
 						background-color="#0F1123"
 						color="#FFFFFF"
-						width="100%"
+						width="268px"
 						height="49px"
 						border-radius="0"
 						rel="noopener noreferrer"
@@ -359,7 +356,7 @@
 			</mj-section>
 			<mj-section padding="0">
 				<mj-column>
-					<mj-table padding="0">
+					<mj-table padding="0" width="100%">
 						<tr style="padding: 0">
 							<td
 								style="
@@ -446,7 +443,6 @@
 						padding="0"
 						align="center"
 						container-background-color="#6e7c9a"
-						width="552px"
 						fluid-on-mobile="true"
 						css-class="image-fallback"
 					/>
@@ -511,6 +507,7 @@
 				</mj-column>
 			</mj-section>
 		</mj-wrapper>
+
 		<mj-raw><!-- Footer --> </mj-raw>
 		<mj-section padding="0" background-color="#0F1123">
 			<mj-column>

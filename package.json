@@ -12,6 +12,8 @@
 	"license": "MIT",
 	"type": "commonjs",
 	"dependencies": {
-		"mjml": "^4.7.1"
+		"-": "^0.0.1",
+		"g": "^2.0.1",
+		"mjml": "^4.15.3"
 	}
 }

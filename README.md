@@ -10,8 +10,8 @@
 
 5. Prevented image downloads via `pointer-events: none`
 
-6. Validated through Mailtrap.io — HTML Checker score: 84.7%
-![alt text](/assets/image.png)
+6. Validated through Mailtrap.io — HTML Checker score: 85.8%
+![HTML Checker score: 85.8%](/assets/image.png)
 
-7. Spam Analysis confirmed that the template should not be flagged as spam
-![alt text](/assets/image-1.png)
+1. Spam Analysis confirmed that the template should not be flagged as spam
+![Spam Analysis](/assets/image-1.png)
